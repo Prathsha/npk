@@ -152,7 +152,7 @@ function SiteNav({ page, setPage }) {
       <div className="navLinks">
         <button className={page === 'home' ? 'active' : ''} type="button" onClick={() => goTo('home')}>Home</button>
         <button className={page === 'about' ? 'active' : ''} type="button" onClick={() => goTo('about')}>About Us</button>
-        <button className={page === 'extras' ? 'active' : ''} type="button" onClick={() => goTo('extras')}>Extras</button>
+        <button className={page === 'extras' ? 'active' : ''} type="button" onClick={() => goTo('extras')}>With Love</button>
         <button className={page === 'letter' ? 'active' : ''} type="button" onClick={() => goTo('letter')}>Letter</button>
       </div>
     </nav>
@@ -385,10 +385,10 @@ function ExtrasPage() {
   return (
     <main className="pageMain">
       <section className="pageHero">
-        <p>Extras</p>
+        <p>With Love</p>
         <h1>A couple more little things I made for us.</h1>
       </section>
-      <section className="extrasGrid" aria-label="Extra memories and games">
+      <section className="extrasGrid" aria-label="With love memories and games">
         <article className="extraCard">
           <div className="storyIcon">
             <Stars size={24} />
