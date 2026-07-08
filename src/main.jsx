@@ -65,7 +65,7 @@ const storyCards = [
     eyebrow: 'The Story Of Us',
     title: 'The beginning matters to me more than I probably say.',
     body:
-      'I know I can be forgetful about random details, but I could never forget what it felt like to start falling for you. The nervousness, the smiling for no reason, the way one small moment could stay in my head for the rest of the day. That was real to me then, and it is still real to me now.',
+      'I could never forget what it felt like to start falling for you. The nervousness, the smiling for no reason, the way one small moment could stay in my head for the rest of the day. That was real to me then, and it is still real to me now.',
   },
   {
     icon: Heart,
