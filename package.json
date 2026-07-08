@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "dev": "PATH=/Users/shaileshnshah/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin:$PATH vite --host 127.0.0.1",
+    "build": "PATH=/Users/shaileshnshah/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin:$PATH vite build",
+    "preview": "PATH=/Users/shaileshnshah/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin:$PATH vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "heic-convert": "^2.1.0",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest"
+  }
+}
