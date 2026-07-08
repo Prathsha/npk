@@ -152,6 +152,7 @@ function SiteNav({ page, setPage }) {
       <div className="navLinks">
         <button className={page === 'home' ? 'active' : ''} type="button" onClick={() => goTo('home')}>Home</button>
         <button className={page === 'about' ? 'active' : ''} type="button" onClick={() => goTo('about')}>About Us</button>
+        <button className={page === 'extras' ? 'active' : ''} type="button" onClick={() => goTo('extras')}>Extras</button>
         <button className={page === 'letter' ? 'active' : ''} type="button" onClick={() => goTo('letter')}>Letter</button>
       </div>
     </nav>
@@ -380,6 +381,47 @@ function LetterPage() {
   );
 }
 
+function ExtrasPage() {
+  return (
+    <main className="pageMain">
+      <section className="pageHero">
+        <p>Extras</p>
+        <h1>A couple more little things I made for us.</h1>
+      </section>
+      <section className="extrasGrid" aria-label="Extra memories and games">
+        <article className="extraCard">
+          <div className="storyIcon">
+            <Stars size={24} />
+          </div>
+          <p>Jeopardy</p>
+          <h2>Our own little game.</h2>
+          <span>
+            A cute little extra for us to play, laugh at, and probably get way
+            too competitive about.
+          </span>
+          <a href="https://jeopardylabs.com/play/nxp" target="_blank" rel="noreferrer">
+            Open Jeopardy
+          </a>
+        </article>
+        <article className="extraCard">
+          <div className="storyIcon">
+            <Sparkles size={24} />
+          </div>
+          <p>Newspaper Post</p>
+          <h2>A tiny keepsake.</h2>
+          <span>
+            I added this here too, so it can live with the rest of our little
+            website instead of being lost in files somewhere.
+          </span>
+          <a href="/extras/newspaper-post.pdf" target="_blank" rel="noreferrer">
+            Open PDF
+          </a>
+        </article>
+      </section>
+    </main>
+  );
+}
+
 function App() {
   const [hasEntered, setHasEntered] = useState(false);
   const [page, setPage] = useState('home');
@@ -390,6 +432,7 @@ function App() {
       <SiteNav page={page} setPage={setPage} />
       {page === 'home' && <HomePage setPage={setPage} />}
       {page === 'about' && <AboutPage />}
+      {page === 'extras' && <ExtrasPage />}
       {page === 'letter' && <LetterPage />}
     </>
   );
